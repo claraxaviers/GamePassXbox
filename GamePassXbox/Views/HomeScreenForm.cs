@@ -12,6 +12,7 @@ namespace GamePassXbox.Views
             string nomeUsuario = email.Split('@')[0];
             labelEntrar.Text = nomeUsuario;
         }
+
         private void HomeScreenForm_Load(object sender, EventArgs e)
         {
 
@@ -40,6 +41,12 @@ namespace GamePassXbox.Views
                 textBoxPesquisar.Text = "pesquisar jogos, complementos e muito mais";
                 textBoxPesquisar.ForeColor = Color.Silver;
             }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            MinhaBibliotecaForms minhaBibliotecaForms = new MinhaBibliotecaForms();
+            minhaBibliotecaForms.Show();
         }
     }
 }

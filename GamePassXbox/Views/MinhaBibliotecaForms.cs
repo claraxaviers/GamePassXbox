@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GamePassXbox.Views
@@ -15,6 +8,12 @@ namespace GamePassXbox.Views
         public MinhaBibliotecaForms()
         {
             InitializeComponent();
+        }
+
+        //CONFIGURAR BOTÃO DE VOLTAR DA TELA DE BIBLIOTECA
+        private void buttonVoltarHomeScreen_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
