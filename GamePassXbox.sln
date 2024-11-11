@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePassXbox", "GamePassXbox\GamePassXbox.csproj", "{5A5F713B-BD13-4BE6-AEC9-4A982E3ACBAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A5F713B-BD13-4BE6-AEC9-4A982E3ACBAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A5F713B-BD13-4BE6-AEC9-4A982E3ACBAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A5F713B-BD13-4BE6-AEC9-4A982E3ACBAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A5F713B-BD13-4BE6-AEC9-4A982E3ACBAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {571C6C61-11F6-41E7-B434-7575C024F19C}
+	EndGlobalSection
+EndGlobal
