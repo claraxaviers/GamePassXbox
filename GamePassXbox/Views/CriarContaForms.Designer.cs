@@ -57,6 +57,7 @@
             // bntCriarConta
             // 
             this.bntCriarConta.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bntCriarConta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bntCriarConta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntCriarConta.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bntCriarConta.ForeColor = System.Drawing.Color.White;
@@ -71,7 +72,9 @@
             // telaCriarContaVoltarLogin
             // 
             this.telaCriarContaVoltarLogin.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.telaCriarContaVoltarLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.telaCriarContaVoltarLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.telaCriarContaVoltarLogin.FlatAppearance.BorderSize = 0;
+            this.telaCriarContaVoltarLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.telaCriarContaVoltarLogin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.telaCriarContaVoltarLogin.ForeColor = System.Drawing.Color.Black;
             this.telaCriarContaVoltarLogin.Location = new System.Drawing.Point(154, 364);

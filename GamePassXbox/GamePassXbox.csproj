@@ -166,11 +166,17 @@
     <Compile Include="Views\LoginForms.Designer.cs">
       <DependentUpon>LoginForms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\MinhaBibliotecaForms.cs">
+    <Compile Include="Views\MinhaBibliotecaCallOfDuty.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\MinhaBibliotecaForms.Designer.cs">
-      <DependentUpon>MinhaBibliotecaForms.cs</DependentUpon>
+    <Compile Include="Views\MinhaBibliotecaCallOfDuty.Designer.cs">
+      <DependentUpon>MinhaBibliotecaCallOfDuty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MinhaBibliotecaJogos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MinhaBibliotecaJogos.Designer.cs">
+      <DependentUpon>MinhaBibliotecaJogos.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -186,8 +192,8 @@
     <EmbeddedResource Include="Views\LoginForms.resx">
       <DependentUpon>LoginForms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\MinhaBibliotecaForms.resx">
-      <DependentUpon>MinhaBibliotecaForms.cs</DependentUpon>
+    <EmbeddedResource Include="Views\MinhaBibliotecaCallOfDuty.resx">
+      <DependentUpon>MinhaBibliotecaCallOfDuty.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

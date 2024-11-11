@@ -43,9 +43,9 @@ namespace GamePassXbox.Views
             }
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void buttonMinhaBiblioteca_Click(object sender, EventArgs e)
         {
-            MinhaBibliotecaForms minhaBibliotecaForms = new MinhaBibliotecaForms();
+            MinhaBibliotecaCallOfDuty minhaBibliotecaForms = new MinhaBibliotecaCallOfDuty();
             minhaBibliotecaForms.Show();
         }
     }

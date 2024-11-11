@@ -166,6 +166,7 @@
             // 
             this.bntCriarContaLinkLogin.AutoSize = true;
             this.bntCriarContaLinkLogin.BackColor = System.Drawing.Color.White;
+            this.bntCriarContaLinkLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bntCriarContaLinkLogin.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bntCriarContaLinkLogin.LinkColor = System.Drawing.SystemColors.Highlight;
             this.bntCriarContaLinkLogin.Location = new System.Drawing.Point(165, 329);
@@ -179,6 +180,7 @@
             // bntLogin
             // 
             this.bntLogin.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bntLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bntLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntLogin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bntLogin.ForeColor = System.Drawing.Color.White;

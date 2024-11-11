@@ -30,13 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeScreenForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonStore = new System.Windows.Forms.Button();
+            this.buttonInicio = new System.Windows.Forms.Button();
+            this.buttonMinhaBiblioteca = new System.Windows.Forms.Button();
             this.buttonSair = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.labelEntrar = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBlackOps6 = new System.Windows.Forms.PictureBox();
             this.pictureBoxAgeOfMythology = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -61,11 +63,11 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.textBoxPesquisar = new System.Windows.Forms.TextBox();
+            this.pictureBlackOps6 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBlackOps6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAgeOfMythology)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -76,12 +78,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBlackOps6)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.buttonStore);
+            this.panel1.Controls.Add(this.buttonInicio);
+            this.panel1.Controls.Add(this.buttonMinhaBiblioteca);
             this.panel1.Controls.Add(this.buttonSair);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.labelEntrar);
@@ -94,9 +100,62 @@
             this.panel1.Size = new System.Drawing.Size(264, 1079);
             this.panel1.TabIndex = 0;
             // 
+            // buttonStore
+            // 
+            this.buttonStore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(17)))), ((int)(((byte)(21)))));
+            this.buttonStore.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonStore.FlatAppearance.BorderSize = 0;
+            this.buttonStore.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.buttonStore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonStore.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonStore.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonStore.Location = new System.Drawing.Point(45, 171);
+            this.buttonStore.Name = "buttonStore";
+            this.buttonStore.Size = new System.Drawing.Size(219, 33);
+            this.buttonStore.TabIndex = 9;
+            this.buttonStore.Text = "Store";
+            this.buttonStore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonStore.UseVisualStyleBackColor = false;
+            // 
+            // buttonInicio
+            // 
+            this.buttonInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(17)))), ((int)(((byte)(21)))));
+            this.buttonInicio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonInicio.FlatAppearance.BorderSize = 0;
+            this.buttonInicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.buttonInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonInicio.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonInicio.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonInicio.Location = new System.Drawing.Point(45, 69);
+            this.buttonInicio.Name = "buttonInicio";
+            this.buttonInicio.Size = new System.Drawing.Size(219, 33);
+            this.buttonInicio.TabIndex = 8;
+            this.buttonInicio.Text = "Início";
+            this.buttonInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonInicio.UseVisualStyleBackColor = false;
+            // 
+            // buttonMinhaBiblioteca
+            // 
+            this.buttonMinhaBiblioteca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(17)))), ((int)(((byte)(21)))));
+            this.buttonMinhaBiblioteca.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonMinhaBiblioteca.FlatAppearance.BorderSize = 0;
+            this.buttonMinhaBiblioteca.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.buttonMinhaBiblioteca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinhaBiblioteca.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMinhaBiblioteca.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonMinhaBiblioteca.Location = new System.Drawing.Point(45, 120);
+            this.buttonMinhaBiblioteca.Name = "buttonMinhaBiblioteca";
+            this.buttonMinhaBiblioteca.Size = new System.Drawing.Size(219, 33);
+            this.buttonMinhaBiblioteca.TabIndex = 7;
+            this.buttonMinhaBiblioteca.Text = "Minha Biblioteca";
+            this.buttonMinhaBiblioteca.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonMinhaBiblioteca.UseVisualStyleBackColor = false;
+            this.buttonMinhaBiblioteca.Click += new System.EventHandler(this.buttonMinhaBiblioteca_Click);
+            // 
             // buttonSair
             // 
             this.buttonSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.buttonSair.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSair.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSair.Location = new System.Drawing.Point(-10, 953);
@@ -133,7 +192,7 @@
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(15, 171);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(81, 33);
+            this.pictureBox4.Size = new System.Drawing.Size(24, 33);
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             // 
@@ -142,33 +201,22 @@
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(15, 120);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(150, 33);
+            this.pictureBox3.Size = new System.Drawing.Size(35, 33);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(15, 69);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(106, 31);
+            this.pictureBox2.Size = new System.Drawing.Size(24, 31);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBlackOps6
-            // 
-            this.pictureBlackOps6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBlackOps6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBlackOps6.Image")));
-            this.pictureBlackOps6.Location = new System.Drawing.Point(311, 69);
-            this.pictureBlackOps6.Name = "pictureBlackOps6";
-            this.pictureBlackOps6.Size = new System.Drawing.Size(620, 350);
-            this.pictureBlackOps6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBlackOps6.TabIndex = 1;
-            this.pictureBlackOps6.TabStop = false;
-            // 
             // pictureBoxAgeOfMythology
             // 
+            this.pictureBoxAgeOfMythology.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxAgeOfMythology.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAgeOfMythology.Image")));
             this.pictureBoxAgeOfMythology.Location = new System.Drawing.Point(953, 69);
             this.pictureBoxAgeOfMythology.Name = "pictureBoxAgeOfMythology";
@@ -183,7 +231,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(343, 372);
+            this.label1.Location = new System.Drawing.Point(345, 372);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(220, 22);
             this.label1.TabIndex = 3;
@@ -203,6 +251,7 @@
             // 
             // pictureBox7
             // 
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(1582, 69);
             this.pictureBox7.Name = "pictureBox7";
@@ -213,6 +262,7 @@
             // 
             // pictureBox8
             // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(1582, 259);
             this.pictureBox8.Name = "pictureBox8";
@@ -271,6 +321,7 @@
             // 
             // pictureBox9
             // 
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.Location = new System.Drawing.Point(311, 582);
             this.pictureBox9.Name = "pictureBox9";
@@ -281,6 +332,7 @@
             // 
             // pictureBox10
             // 
+            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
             this.pictureBox10.Location = new System.Drawing.Point(517, 582);
             this.pictureBox10.Name = "pictureBox10";
@@ -291,6 +343,7 @@
             // 
             // pictureBox11
             // 
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
             this.pictureBox11.Location = new System.Drawing.Point(722, 582);
             this.pictureBox11.Name = "pictureBox11";
@@ -301,6 +354,7 @@
             // 
             // pictureBox12
             // 
+            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
             this.pictureBox12.Location = new System.Drawing.Point(926, 582);
             this.pictureBox12.Name = "pictureBox12";
@@ -311,6 +365,7 @@
             // 
             // pictureBox13
             // 
+            this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
             this.pictureBox13.Location = new System.Drawing.Point(1131, 582);
             this.pictureBox13.Name = "pictureBox13";
@@ -321,6 +376,7 @@
             // 
             // pictureBox14
             // 
+            this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
             this.pictureBox14.Location = new System.Drawing.Point(1337, 582);
             this.pictureBox14.Name = "pictureBox14";
@@ -331,6 +387,7 @@
             // 
             // pictureBox15
             // 
+            this.pictureBox15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
             this.pictureBox15.Location = new System.Drawing.Point(1539, 582);
             this.pictureBox15.Name = "pictureBox15";
@@ -437,6 +494,18 @@
             this.textBoxPesquisar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxPesquisar.Enter += new System.EventHandler(this.textBoxPesquisar_Enter);
             // 
+            // pictureBlackOps6
+            // 
+            this.pictureBlackOps6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBlackOps6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBlackOps6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBlackOps6.Image")));
+            this.pictureBlackOps6.Location = new System.Drawing.Point(311, 69);
+            this.pictureBlackOps6.Name = "pictureBlackOps6";
+            this.pictureBlackOps6.Size = new System.Drawing.Size(620, 350);
+            this.pictureBlackOps6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBlackOps6.TabIndex = 1;
+            this.pictureBlackOps6.TabStop = false;
+            // 
             // HomeScreenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -478,7 +547,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBlackOps6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAgeOfMythology)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -489,6 +557,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBlackOps6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -500,7 +569,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBlackOps6;
         private System.Windows.Forms.PictureBox pictureBoxAgeOfMythology;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -528,5 +596,9 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button buttonSair;
         private System.Windows.Forms.TextBox textBoxPesquisar;
+        private System.Windows.Forms.Button buttonMinhaBiblioteca;
+        private System.Windows.Forms.Button buttonInicio;
+        private System.Windows.Forms.Button buttonStore;
+        private System.Windows.Forms.PictureBox pictureBlackOps6;
     }
 }
