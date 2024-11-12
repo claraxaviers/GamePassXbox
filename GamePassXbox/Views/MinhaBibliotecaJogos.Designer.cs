@@ -74,7 +74,7 @@
             this.buttonVoltarHomeScreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.buttonVoltarHomeScreen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonVoltarHomeScreen.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonVoltarHomeScreen.Font = new System.Drawing.Font("AniMe Matrix - MB_EN", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonVoltarHomeScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVoltarHomeScreen.ForeColor = System.Drawing.Color.White;
             this.buttonVoltarHomeScreen.Location = new System.Drawing.Point(28, 25);
             this.buttonVoltarHomeScreen.Name = "buttonVoltarHomeScreen";
@@ -470,6 +470,7 @@
             this.Controls.Add(this.buttonVoltarHomeScreen);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MinhaBibliotecaJogos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

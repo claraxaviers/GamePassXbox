@@ -51,7 +51,7 @@ namespace GamePassXbox.Views
 
             MessageBox.Show("Conta criada com sucesso!");
 
-            this.Close();
+            this.Hide();
             var loginForm = new LoginForms();
             loginForm.Show();
 

@@ -22,6 +22,12 @@ namespace GamePassXbox.Views
             bool autenticado = _usuarioService.AutenticarUsuario(email, senha);
             if (autenticado)
             {
+                // Extrair o nome de usuário (parte do e-mail antes do @)
+                string nomeUsuario = email.Split('@')[0];
+
+                // Armazenar o nome de usuário na classe de sessão
+                UsuarioSessao.NomeUsuario = nomeUsuario;
+
                 MessageBox.Show("Login bem-sucedido!");
                 HomeScreenForm homeScreenForm = new HomeScreenForm();
                 this.Hide();

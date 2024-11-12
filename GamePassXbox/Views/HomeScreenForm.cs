@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GamePassXbox.Data;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -10,6 +11,11 @@ namespace GamePassXbox.Views
         {
             InitializeComponent();
             this.FormClosing += HomeScreenForm_FormClosing;
+            
+        }
+        private void HomeScreenForm_Load(object sender, EventArgs e)
+        {
+            labelNomeUsuario.Text = UsuarioSessao.NomeUsuario;
         }
         private void HomeScreenForm_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -33,21 +39,13 @@ namespace GamePassXbox.Views
                 textBoxPesquisar.ForeColor = Color.White;
             }
         }
-        private void textBoxPesquisar_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(textBoxPesquisar.Text))
-            {
-                textBoxPesquisar.Text = "pesquisar jogos, complementos e muito mais";
-                textBoxPesquisar.ForeColor = Color.Silver;
-            }
-        }
 
         private void buttonMinhaBiblioteca_Click(object sender, EventArgs e)
         {
             MinhaBibliotecaJogos minhaBibliotecaJogos = new MinhaBibliotecaJogos();
             this.Hide();
             minhaBibliotecaJogos.Show();
-            
+
         }
 
         private void pictureBlackOps6_Click(object sender, EventArgs e)
@@ -55,7 +53,12 @@ namespace GamePassXbox.Views
             MinhaBibliotecaCallOfDuty minhaBibliotecaCallOfDuty = new MinhaBibliotecaCallOfDuty();
             this.Hide();
             minhaBibliotecaCallOfDuty.Show();
-            
+
         }
+
+        
     }
+
+
+
 }

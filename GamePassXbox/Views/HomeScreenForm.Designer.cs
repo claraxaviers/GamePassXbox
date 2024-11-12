@@ -36,7 +36,7 @@
             this.buttonMinhaBiblioteca = new System.Windows.Forms.Button();
             this.buttonSair = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.labelEntrar = new System.Windows.Forms.Label();
+            this.labelNomeUsuario = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -92,7 +92,7 @@
             this.panel1.Controls.Add(this.buttonMinhaBiblioteca);
             this.panel1.Controls.Add(this.buttonSair);
             this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.labelEntrar);
+            this.panel1.Controls.Add(this.labelNomeUsuario);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -180,15 +180,15 @@
             this.label14.TabIndex = 5;
             this.label14.Text = "PC GAME PASS";
             // 
-            // labelEntrar
+            // labelNomeUsuario
             // 
-            this.labelEntrar.AutoSize = true;
-            this.labelEntrar.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEntrar.Location = new System.Drawing.Point(12, 29);
-            this.labelEntrar.Name = "labelEntrar";
-            this.labelEntrar.Size = new System.Drawing.Size(80, 23);
-            this.labelEntrar.TabIndex = 4;
-            this.labelEntrar.Text = "PLAYER";
+            this.labelNomeUsuario.AutoSize = true;
+            this.labelNomeUsuario.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNomeUsuario.Location = new System.Drawing.Point(12, 29);
+            this.labelNomeUsuario.Name = "labelNomeUsuario";
+            this.labelNomeUsuario.Size = new System.Drawing.Size(80, 23);
+            this.labelNomeUsuario.TabIndex = 4;
+            this.labelNomeUsuario.Text = "PLAYER";
             // 
             // pictureBox4
             // 
@@ -556,6 +556,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HomeScreenForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.HomeScreenForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -606,7 +607,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label labelEntrar;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button buttonSair;
         private System.Windows.Forms.TextBox textBoxPesquisar;
@@ -615,5 +615,6 @@
         private System.Windows.Forms.Button buttonStore;
         private System.Windows.Forms.PictureBox pictureBlackOps6;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Label labelNomeUsuario;
     }
 }
