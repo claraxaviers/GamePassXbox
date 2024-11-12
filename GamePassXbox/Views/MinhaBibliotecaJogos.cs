@@ -36,5 +36,14 @@ namespace GamePassXbox.Views
             this.Hide();
             minhaBibliotecaCallOfDuty.Show();
         }
+
+        private void textBoxPesquisar_Enter(object sender, EventArgs e)
+        {
+            if (textBoxPesquisar.Text == "pesquisar jogos, complementos e muito mais")
+            {
+                textBoxPesquisar.Text = "";
+                textBoxPesquisar.ForeColor = Color.White;
+            }
+        }
     }
 }

@@ -22,8 +22,9 @@ namespace GamePassXbox.Views
         private void telaCriarContaVoltarLogin_Click(object sender, EventArgs e)
         {
             LoginForms loginForms = new LoginForms();
+            this.Hide();
             loginForms.Show();
-            this.Close();
+            
         }
 
         private void bntCriarConta_Click(object sender, EventArgs e)

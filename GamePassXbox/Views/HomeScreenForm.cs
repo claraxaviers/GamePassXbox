@@ -27,8 +27,8 @@ namespace GamePassXbox.Views
             this.Hide();
             LoginForms loginForms = new LoginForms();
             loginForms.ShowDialog();
-            this.Close();
-            Application.Exit();
+            this.Hide();
+           
         }
 
         private void textBoxPesquisar_Enter(object sender, EventArgs e)

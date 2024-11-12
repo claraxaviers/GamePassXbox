@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace GamePassXbox.Views
@@ -20,6 +21,15 @@ namespace GamePassXbox.Views
             HomeScreenForm homeScreenForm = new HomeScreenForm();
             this.Hide();
             homeScreenForm.Show();
+        }
+
+        private void Search_Enter(object sender, EventArgs e)
+        {
+            if (Search.Text == "pesquisar jogos, complementos e muito mais")
+            {
+                Search.Text = "";
+                Search.ForeColor = Color.White;
+            }
         }
     }
 }

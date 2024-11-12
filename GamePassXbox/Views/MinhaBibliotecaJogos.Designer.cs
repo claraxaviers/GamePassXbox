@@ -96,6 +96,7 @@
             this.textBoxPesquisar.TabIndex = 27;
             this.textBoxPesquisar.Text = "pesquisar jogos, complementos e muito mais";
             this.textBoxPesquisar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPesquisar.Enter += new System.EventHandler(this.textBoxPesquisar_Enter);
             // 
             // labelTiuloMinhaBiblioteca
             // 

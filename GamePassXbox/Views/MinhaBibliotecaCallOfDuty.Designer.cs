@@ -42,7 +42,7 @@
             this.labelDescricaoBarra = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBoxPesquisar = new System.Windows.Forms.TextBox();
+            this.Search = new System.Windows.Forms.TextBox();
             this.labelVersoesBlackOps6 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.labelNomedeUser = new System.Windows.Forms.Label();
@@ -77,7 +77,7 @@
             // 
             this.buttonVoltarHomeScreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
             this.buttonVoltarHomeScreen.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonVoltarHomeScreen.Font = new System.Drawing.Font("AniMe Matrix - MB_EN", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonVoltarHomeScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVoltarHomeScreen.ForeColor = System.Drawing.Color.White;
             this.buttonVoltarHomeScreen.Location = new System.Drawing.Point(28, 25);
             this.buttonVoltarHomeScreen.Name = "buttonVoltarHomeScreen";
@@ -208,18 +208,19 @@
             this.button1.Text = "XCLOUD";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // textBoxPesquisar
+            // Search
             // 
-            this.textBoxPesquisar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.textBoxPesquisar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxPesquisar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPesquisar.ForeColor = System.Drawing.Color.Silver;
-            this.textBoxPesquisar.Location = new System.Drawing.Point(906, 32);
-            this.textBoxPesquisar.Name = "textBoxPesquisar";
-            this.textBoxPesquisar.Size = new System.Drawing.Size(510, 22);
-            this.textBoxPesquisar.TabIndex = 26;
-            this.textBoxPesquisar.Text = "pesquisar jogos, complementos e muito mais";
-            this.textBoxPesquisar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.Search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Search.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Search.ForeColor = System.Drawing.Color.Silver;
+            this.Search.Location = new System.Drawing.Point(906, 32);
+            this.Search.Name = "Search";
+            this.Search.Size = new System.Drawing.Size(510, 22);
+            this.Search.TabIndex = 26;
+            this.Search.Text = "pesquisar jogos, complementos e muito mais";
+            this.Search.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Search.Enter += new System.EventHandler(this.Search_Enter);
             // 
             // labelVersoesBlackOps6
             // 
@@ -256,7 +257,7 @@
             this.labelNomedeUser.Size = new System.Drawing.Size(0, 23);
             this.labelNomedeUser.TabIndex = 29;
             // 
-            // MinhaBibliotecaForms
+            // MinhaBibliotecaCallOfDuty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -265,7 +266,7 @@
             this.Controls.Add(this.labelNomedeUser);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.labelVersoesBlackOps6);
-            this.Controls.Add(this.textBoxPesquisar);
+            this.Controls.Add(this.Search);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.labelDescricaoBarra);
@@ -280,7 +281,7 @@
             this.Controls.Add(this.labelTituloBlackOps6);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "MinhaBibliotecaForms";
+            this.Name = "MinhaBibliotecaCallOfDuty";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -305,7 +306,7 @@
         private System.Windows.Forms.Label labelDescricaoBarra;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBoxPesquisar;
+        private System.Windows.Forms.TextBox Search;
         private System.Windows.Forms.Label labelVersoesBlackOps6;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label labelNomedeUser;
