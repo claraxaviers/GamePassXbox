@@ -8,12 +8,18 @@ namespace GamePassXbox.Views
         public MinhaBibliotecaCallOfDuty()
         {
             InitializeComponent();
+            this.FormClosing += MinhaBibliotecaCallOfDuty_FormClosing;
+        }
+        private void MinhaBibliotecaCallOfDuty_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
 
-        //CONFIGURAR BOTÃO DE VOLTAR DA TELA DE BIBLIOTECA
         private void buttonVoltarHomeScreen_Click(object sender, EventArgs e)
         {
-
+            HomeScreenForm homeScreenForm = new HomeScreenForm();
+            this.Hide();
+            homeScreenForm.Show();
         }
     }
 }

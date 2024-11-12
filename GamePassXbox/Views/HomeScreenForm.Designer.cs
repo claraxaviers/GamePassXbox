@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeScreenForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonStore = new System.Windows.Forms.Button();
@@ -64,6 +65,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.textBoxPesquisar = new System.Windows.Forms.TextBox();
             this.pictureBlackOps6 = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -182,10 +184,11 @@
             // 
             this.labelEntrar.AutoSize = true;
             this.labelEntrar.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEntrar.Location = new System.Drawing.Point(12, 28);
+            this.labelEntrar.Location = new System.Drawing.Point(12, 29);
             this.labelEntrar.Name = "labelEntrar";
-            this.labelEntrar.Size = new System.Drawing.Size(0, 23);
+            this.labelEntrar.Size = new System.Drawing.Size(80, 23);
             this.labelEntrar.TabIndex = 4;
+            this.labelEntrar.Text = "PLAYER";
             // 
             // pictureBox4
             // 
@@ -224,6 +227,7 @@
             this.pictureBoxAgeOfMythology.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxAgeOfMythology.TabIndex = 2;
             this.pictureBoxAgeOfMythology.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBoxAgeOfMythology, "Age of Mythology: Retold");
             // 
             // label1
             // 
@@ -259,6 +263,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 5;
             this.pictureBox7.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox7, "Forza Motorsport");
             // 
             // pictureBox8
             // 
@@ -270,6 +275,7 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 6;
             this.pictureBox8.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox8, "Flight Simulator 2024");
             // 
             // label3
             // 
@@ -329,6 +335,7 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 11;
             this.pictureBox9.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox9, "Outer Wilds");
             // 
             // pictureBox10
             // 
@@ -340,6 +347,7 @@
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 12;
             this.pictureBox10.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox10, "Subnautica");
             // 
             // pictureBox11
             // 
@@ -351,6 +359,7 @@
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 13;
             this.pictureBox11.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox11, "Stardew Valley");
             // 
             // pictureBox12
             // 
@@ -362,6 +371,7 @@
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 14;
             this.pictureBox12.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox12, "Starfield");
             // 
             // pictureBox13
             // 
@@ -373,6 +383,7 @@
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 15;
             this.pictureBox13.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox13, "Dead Island 2");
             // 
             // pictureBox14
             // 
@@ -384,6 +395,7 @@
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 16;
             this.pictureBox14.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox14, "Madde  NFL 2025");
             // 
             // pictureBox15
             // 
@@ -395,6 +407,7 @@
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 17;
             this.pictureBox15.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox15, "Stray");
             // 
             // label7
             // 
@@ -505,6 +518,8 @@
             this.pictureBlackOps6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBlackOps6.TabIndex = 1;
             this.pictureBlackOps6.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBlackOps6, "Call of Duty: Black Ops 6");
+            this.pictureBlackOps6.Click += new System.EventHandler(this.pictureBlackOps6_Click);
             // 
             // HomeScreenForm
             // 
@@ -541,7 +556,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HomeScreenForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.HomeScreenForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -600,5 +614,6 @@
         private System.Windows.Forms.Button buttonInicio;
         private System.Windows.Forms.Button buttonStore;
         private System.Windows.Forms.PictureBox pictureBlackOps6;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

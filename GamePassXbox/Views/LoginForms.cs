@@ -23,7 +23,7 @@ namespace GamePassXbox.Views
             if (autenticado)
             {
                 MessageBox.Show("Login bem-sucedido!");
-                HomeScreenForm homeScreenForm = new HomeScreenForm(email);
+                HomeScreenForm homeScreenForm = new HomeScreenForm();
                 this.Hide();
                 homeScreenForm.Show();
             }

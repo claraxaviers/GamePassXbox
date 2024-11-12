@@ -6,24 +6,23 @@ namespace GamePassXbox.Views
 {
     public partial class HomeScreenForm : Form
     {
-        public HomeScreenForm(string email)
+        public HomeScreenForm()
         {
             InitializeComponent();
-            string nomeUsuario = email.Split('@')[0];
-            labelEntrar.Text = nomeUsuario;
+            this.FormClosing += HomeScreenForm_FormClosing;
         }
-
-        private void HomeScreenForm_Load(object sender, EventArgs e)
+        private void HomeScreenForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void buttonSair_Click(object sender, EventArgs e)
         {
+            this.Hide();
             LoginForms loginForms = new LoginForms();
-            loginForms.Show();
+            loginForms.ShowDialog();
             this.Close();
-
+            Application.Exit();
         }
 
         private void textBoxPesquisar_Enter(object sender, EventArgs e)
@@ -45,8 +44,18 @@ namespace GamePassXbox.Views
 
         private void buttonMinhaBiblioteca_Click(object sender, EventArgs e)
         {
-            MinhaBibliotecaCallOfDuty minhaBibliotecaForms = new MinhaBibliotecaCallOfDuty();
-            minhaBibliotecaForms.Show();
+            MinhaBibliotecaJogos minhaBibliotecaJogos = new MinhaBibliotecaJogos();
+            this.Hide();
+            minhaBibliotecaJogos.Show();
+            
+        }
+
+        private void pictureBlackOps6_Click(object sender, EventArgs e)
+        {
+            MinhaBibliotecaCallOfDuty minhaBibliotecaCallOfDuty = new MinhaBibliotecaCallOfDuty();
+            this.Hide();
+            minhaBibliotecaCallOfDuty.Show();
+            
         }
     }
 }

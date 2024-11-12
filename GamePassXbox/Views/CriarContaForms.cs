@@ -12,6 +12,11 @@ namespace GamePassXbox.Views
         {
             InitializeComponent();
             _usuarioService = new UsuarioService();
+            this.FormClosing += CriarContaForms_FormClosing;
+        }
+        private void CriarContaForms_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit(); 
         }
 
         private void telaCriarContaVoltarLogin_Click(object sender, EventArgs e)
