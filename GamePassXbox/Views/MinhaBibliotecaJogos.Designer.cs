@@ -97,6 +97,7 @@
             this.textBoxPesquisar.Text = "pesquisar jogos, complementos e muito mais";
             this.textBoxPesquisar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxPesquisar.Enter += new System.EventHandler(this.textBoxPesquisar_Enter);
+            this.textBoxPesquisar.Leave += new System.EventHandler(this.textBoxPesquisar_Leave);
             // 
             // labelTiuloMinhaBiblioteca
             // 

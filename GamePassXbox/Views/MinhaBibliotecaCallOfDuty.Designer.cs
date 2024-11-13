@@ -221,6 +221,7 @@
             this.Search.Text = "pesquisar jogos, complementos e muito mais";
             this.Search.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Search.Enter += new System.EventHandler(this.Search_Enter);
+            this.Search.Leave += new System.EventHandler(this.Search_Leave);
             // 
             // labelVersoesBlackOps6
             // 

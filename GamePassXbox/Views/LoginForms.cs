@@ -13,7 +13,6 @@ namespace GamePassXbox.Views
             InitializeComponent();
             _usuarioService = new UsuarioService();
         }
-
         private void bntLogin_Click(object sender, EventArgs e)
         {
             string email = telaLoginLabelEmail.Text;

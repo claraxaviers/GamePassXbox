@@ -26,9 +26,7 @@ namespace GamePassXbox.Views
         {
             this.Hide();
             LoginForms loginForms = new LoginForms();
-            loginForms.ShowDialog();
-            this.Hide();
-           
+            loginForms.ShowDialog();                     
         }
 
         private void textBoxPesquisar_Enter(object sender, EventArgs e)
@@ -54,11 +52,6 @@ namespace GamePassXbox.Views
             this.Hide();
             minhaBibliotecaCallOfDuty.Show();
 
-        }
-
-        
+        }       
     }
-
-
-
 }

@@ -19,7 +19,7 @@ namespace GamePassXbox.Views
         }
         private void MinhaBibliotecaJogos_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit(); 
+            Application.Exit();
         }
 
         private void buttonVoltarHomeScreen_Click(object sender, EventArgs e)
@@ -42,6 +42,14 @@ namespace GamePassXbox.Views
             if (textBoxPesquisar.Text == "pesquisar jogos, complementos e muito mais")
             {
                 textBoxPesquisar.Text = "";
+                textBoxPesquisar.ForeColor = Color.White;
+            }
+        }
+        private void textBoxPesquisar_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textBoxPesquisar.Text))
+            {
+                textBoxPesquisar.Text = "pesquisar jogos, complementos e muito mais";
                 textBoxPesquisar.ForeColor = Color.White;
             }
         }

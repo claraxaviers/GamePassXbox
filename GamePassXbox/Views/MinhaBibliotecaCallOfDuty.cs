@@ -31,5 +31,14 @@ namespace GamePassXbox.Views
                 Search.ForeColor = Color.White;
             }
         }
+        private void Search_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(Search.Text))
+            {
+                Search.Text = "pesquisar jogos, complementos e muito mais";
+                Search.ForeColor = Color.White;
+            }
+        }
+
     }
 }
